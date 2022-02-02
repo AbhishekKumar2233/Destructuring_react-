@@ -9,7 +9,7 @@ const cars = [
   },
   {
     model: "Tesla",
-    coloursByPropularity: ["black", "red"],
+    coloursByPropularity: ["red", "black"],
     speedStats: {
       topSpeed: 160,
       zeroToSixty: 6.2

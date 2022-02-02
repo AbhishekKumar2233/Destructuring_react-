@@ -1,6 +1,22 @@
 import "./styles.css";
 import cars from "./data";
 
+const [bmw, tesla] = cars;
+
+const {
+  speedStats: { topSpeed: bmwTopspeed }
+} = bmw;
+const {
+  speedStats: { topSpeed: teslaTopspeed }
+} = tesla;
+
+const {
+  coloursByPropularity: [bmwTopcolor]
+} = bmw;
+const {
+  coloursByPropularity: [teslaTopcolor]
+} = tesla;
+
 export default function App() {
   return (
     <div className="app">
@@ -11,9 +27,14 @@ export default function App() {
           <th>Top Colours</th>
         </tr>
         <tr>
-          <td>{cars[0].model}</td>
-          <td>{cars[0].speedStats.topSpeed}</td>
-          <td>{cars[0].coloursByPropularity}</td>
+          <td>{bmw.model}</td>
+          <td>{bmwTopspeed}</td>
+          <td>{bmwTopcolor}</td>
+        </tr>
+        <tr>
+          <td>{tesla.model}</td>
+          <td>{teslaTopspeed}</td>
+          <td>{teslaTopcolor}</td>
         </tr>
       </table>
     </div>
