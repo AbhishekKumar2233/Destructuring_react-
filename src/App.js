@@ -1,10 +1,9 @@
 import "./styles.css";
-import Timer from "./Timer";
 
 export default function App() {
   return (
-    <div className="App">
-      <Timer />
+    <div className="app">
+      <h3>Hyy</h3>
     </div>
   );
 }
